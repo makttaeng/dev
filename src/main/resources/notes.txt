@@ -1,0 +1,5 @@
+# 이미지 경로                24.02.16
+스프링부트의 경로는 기본설정이 정적파일의 경우 resources/static 로 되어있음
+따라서 static 까지 생략하고 절대경로로 /imges/mainpage/img.png 등으로 지정이 가능
+* 단 application 에서 content-path 를 지정해 줬다면 /content-path/imges/mainpage 로 지정해야함.
+
