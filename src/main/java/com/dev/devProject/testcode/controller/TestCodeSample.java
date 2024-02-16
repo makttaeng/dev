@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class TestCodeSample {
 
-    @GetMapping(value = "/testpage")
+    @GetMapping(value = "/home")
     public String testpage() {
         System.out.println("test gogo");
-        return "testpage";
+        return "mainpage/home";
     }
 }
