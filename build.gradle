@@ -25,6 +25,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
@@ -35,7 +36,7 @@ dependencies {
 	// mariadb 연동 관련 24.02.19 추가(실제론 아닌듯. db연결하려고 하니 추가 다운로드 했음)
 	implementation 'org.mariadb.jdbc:mariadb-java-client'
 	// mybatis
-	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'

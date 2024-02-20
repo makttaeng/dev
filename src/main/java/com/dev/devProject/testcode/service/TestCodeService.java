@@ -1,7 +1,8 @@
 package com.dev.devProject.testcode.service;
 
+import com.dev.devProject.testcode.dto.TestCodeRslt;
 import com.dev.devProject.testcode.mapper.TestCodeMapper;
-import com.dev.devProject.testcode.vo.TestCodeVO;
+import com.dev.devProject.testcode.dto.TestCodeDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,7 @@ public class TestCodeService {
         this.testCodeMapper = testCodeMapper;
     }
 
-    public List<TestCodeVO> getTestcode() {
+    public List<TestCodeRslt> getTestcode() {
         return testCodeMapper.getTestcode();
     }
 

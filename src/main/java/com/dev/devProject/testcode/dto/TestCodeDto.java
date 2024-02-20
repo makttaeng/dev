@@ -1,11 +1,11 @@
-package com.dev.devProject.testcode.vo;
+package com.dev.devProject.testcode.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class TestCodeVO {
+public class TestCodeDto {
 
     public String test1;
 
