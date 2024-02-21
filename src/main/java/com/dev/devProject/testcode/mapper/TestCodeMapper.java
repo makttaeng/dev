@@ -8,5 +8,5 @@ import java.util.List;
 
 @Mapper
 public interface TestCodeMapper {
-    List<TestCodeRslt> getTestcode() ;
+    List<TestCodeDto> getTestcode() ;
 }

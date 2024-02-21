@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
-//@MapperScan(basePackages = "com.dev.devProject")
+@MapperScan(basePackages = "com.dev.devProject")
 @SpringBootApplication(exclude = SecurityAutoConfiguration.class)
 public class DevProjectApplication {
 

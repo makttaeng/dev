@@ -37,6 +37,8 @@ dependencies {
 	implementation 'org.mariadb.jdbc:mariadb-java-client'
 	// mybatis
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+	// @ConfigurationProperties 애너테이션을 사용하여 외부 설정 파일에서 프로퍼티 값을 자동으로 바인딩
+	implementation group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '3.2.2'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'

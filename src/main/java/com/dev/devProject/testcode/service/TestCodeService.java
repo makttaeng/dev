@@ -17,7 +17,7 @@ public class TestCodeService {
         this.testCodeMapper = testCodeMapper;
     }
 
-    public List<TestCodeRslt> getTestcode() {
+    public List<TestCodeDto> getTestcode() {
         return testCodeMapper.getTestcode();
     }
 
