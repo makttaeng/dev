@@ -1,7 +1,6 @@
 package com.dev.devProject.testcode.controller;
 
 import com.dev.devProject.testcode.dto.TestCodeDto;
-import com.dev.devProject.testcode.dto.TestCodeRslt;
 import com.dev.devProject.testcode.service.TestCodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

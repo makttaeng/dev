@@ -1,6 +1,5 @@
 package com.dev.devProject.testcode.service;
 
-import com.dev.devProject.testcode.dto.TestCodeRslt;
 import com.dev.devProject.testcode.mapper.TestCodeMapper;
 import com.dev.devProject.testcode.dto.TestCodeDto;
 import org.springframework.beans.factory.annotation.Autowired;

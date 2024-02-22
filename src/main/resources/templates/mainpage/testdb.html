@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TestDB Page</title>
+</head>
+<body>
+<h1>Test Code Data</h1>
+<ul>
+    <!-- 데이터를 반복하여 출력할 위치 -->
+    <!-- 자바스크립트로 데이터를 받아와서 동적으로 표시할 수도 있습니다. -->
+    <!-- 이 예제에서는 서버에서 받은 데이터를 정적으로 표시합니다. -->
+    <!-- Thymeleaf나 Freemarker와 같은 템플릿 엔진을 사용하면 동적으로 데이터를 표시할 수 있습니다. -->
+    <!-- 이 예제는 정적인 HTML 파일을 사용합니다. -->
+    <!-- 받아온 데이터는 Javascript를 통해 반복하여 표시할 수 있습니다. -->
+    <div id="testdb-data">
+        <!-- 데이터가 자바스크립트로 삽입될 자리 -->
+    </div>
+
+    <script>
+        // 받아온 데이터를 이용해 동적으로 HTML을 생성하여 출력하는 함수
+        function displayData(data) {
+            var html = "";
+            data.forEach(function(item) {
+                html += "<li>" + item.property1 + " - " + item.property2 + "</li>";
+            });
+            document.getElementById("testdb-data").innerHTML = html;
+        }
+
+        // 서버로부터 데이터를 받아오는 요청을 보내는 함수
+        fetch('/testdb')
+            .then(response => response.json())
+            .then(data => displayData(data))
+            .catch(error => console.error('Error:', error));
+    </script>
+</ul>
+</body>
+</html>
